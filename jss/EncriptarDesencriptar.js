@@ -69,9 +69,9 @@ function encriptar() {  //algoritmo que encripata
     }
    function addEncr() {
     if(typeof encriptar() === 'undefined'){
-        respuesta.innerHTML= '' //aqui agregamos lo que retorna la funcion encriptar    
+        respuesta.innerHTML= '';   
    }else{
-    respuesta.innerHTML= encriptar();
+    respuesta.innerHTML= encriptar(); //aqui agregamos lo que retorna la funcion encriptar 
    }
 }
    function addDesc(){
