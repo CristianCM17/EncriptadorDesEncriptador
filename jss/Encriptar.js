@@ -6,6 +6,11 @@
 const btnEncriptar= document.getElementById("btn-encriptar");
 const frase= document.getElementById("frase");
 const respuesta = document.getElementById("respuesta");
+const btnlimpiar = document.getElementById("btn-limpiar");
+
+
+
+
 
 function encriptar() {
     let nuevaPalabra= '';
@@ -42,6 +47,10 @@ function encriptar() {
    }
 
    btnEncriptar.onclick= addResp;
+
+   btnlimpiar.addEventListener("click", () => {
+            frase.value= '';
+   });
 
    
 
