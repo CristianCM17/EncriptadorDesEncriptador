@@ -48,6 +48,7 @@ function encriptar() {  //algoritmo que encripata
         alert("no hay frase")
       }
     }
+    
 
     function Desencriptar() { //algorimo que me desencripta
       

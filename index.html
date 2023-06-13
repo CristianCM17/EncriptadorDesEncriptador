@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EncriptadorDesencriptador</title>
-    
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
 
-    <div>
+
+  
+    <div class="img">
         <img src="/img/Vector.png" >
     </div>
+
+    <h1>ENCRIPTAR O DESENCRIPTAR FRASE</h1>
+
+   
+        <div class="encriptar-caja">
+
+           
+            <textarea class="frase" id="frase" cols="30" rows="10" placeholder="Hola"></textarea>
+
+            <div class="botones">
+                <button id="btn-encriptar">
+                    Encriptar
+            </button>
+            <button id="btn-desencriptar">
+                    Desencriptar
+            </button>
+            <button id="btn-limpiar">
+                limpiar
+            </button>
+            </div>
+
+        </div>
     
+        <div class="desencriptar-caja">
+            <textarea  class="respuesta" id="respuesta" cols="30" rows="10" placeholder="hoberlai" ></textarea>
+            <button id="btn-copiar">Copiar</button>
+        </div>
 
-    <textarea  id="frase" cols="30" rows="10" placeholder="Hola"></textarea>
 
-    <div>
-        <label ></label>
-    </div>
 
-    <div>
-        <button id="btn-encriptar">
-                Encriptar
-        </button>
-        <button id="btn-desencriptar">
-                Desencriptar
-        </button>
-        <button id="btn-limpiar">
-            limpiar
-        </button>
-    </div>
-
-    <div>
-        <textarea  id="respuesta" cols="30" rows="10" placeholder="hoberlai" ></textarea>
-        <button id="btn-copiar">Copiar</button>
-    </div>
-
+   
 
     <script src="/jss/EncriptarDesencriptar.js">
 
