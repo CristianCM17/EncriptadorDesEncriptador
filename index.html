@@ -5,46 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador y Desencriptador</title>
-    <link rel="stylesheet" href="style.css">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
 
 
   
-    <div class="img">
-        <img src="/img/Vector.png" >
+    <div class="container">
+        <img class="img-thumbnail float-right"   src="/img/Vector.png" >
     </div>
 
-    <h1>ENCRIPTAR O DESENCRIPTAR FRASE</h1>
 
-   
-        <div class="encriptar-caja">
+
+
+    <div class="container text-center">
+        <h1 class="font-weight-bold text-primary">ENCRIPTAR O DESENCRIPTAR FRASE</h1>
+            <textarea class="form-control" id="frase" cols="30" rows="10" placeholder="Hola"></textarea>
 
            
-            <textarea class="frase" id="frase" cols="30" rows="10" placeholder="Hola"></textarea>
-
-            <div class="botones">
-                <button id="btn-encriptar">
+            <button class="btn btn-outline-primary" id="btn-encriptar">
                     Encriptar
             </button>
-            <button id="btn-desencriptar">
+
+            <button class="btn btn-outline-primary" id="btn-desencriptar">
                     Desencriptar
             </button>
-            <button id="btn-limpiar">
+
+            <button class="btn btn-outline-primary" id="btn-limpiar">
                 limpiar
             </button>
-            </div>
-
-        </div>
+           
+            <textarea  class="form-control" id="respuesta" cols="30" rows="10" placeholder="hoberlai" ></textarea>
+            <button class="btn btn-outline-primary" id="btn-copiar">Copiar</button>
+    </div>
     
-        <div class="desencriptar-caja">
-            <textarea  class="respuesta" id="respuesta" cols="30" rows="10" placeholder="hoberlai" ></textarea>
-            <button id="btn-copiar">Copiar</button>
-        </div>
+       
 
 
 
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+
+    </script>
 
     <script src="/jss/EncriptarDesencriptar.js">
 

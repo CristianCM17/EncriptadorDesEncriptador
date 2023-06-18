@@ -15,6 +15,7 @@ const btnCopiar = document.getElementById("btn-copiar");//accedemos a la btnCopi
 
 
 
+
 function encriptar() {  //algoritmo que encripata
     let nuevaPalabra= ''; //la nueva palabra ira completandose en el loop
         if(frase.value!==''){
