@@ -10,13 +10,14 @@ respuesta.readOnly=true; //el text area de la respuesta no se podra excribir nad
 const btnlimpiar = document.getElementById("btn-limpiar"); //accedemos a la btnlimpiar que limpiara la frase
 const btnDesencriptar = document.getElementById("btn-desencriptar")//accedemos al boton que desencriptara
 const btnCopiar = document.getElementById("btn-copiar");//accedemos a la btnCopiar que copiara el contenido de la respuesta
-
+const alerta = document.getElementById("alerta");
 
 
 
 
 
 function encriptar() {  //algoritmo que encripata
+  alerta.style.display = "none";
     let nuevaPalabra= ''; //la nueva palabra ira completandose en el loop
         if(frase.value!==''){
     for (let index = 0; index < frase.value.length; index++) {
@@ -46,13 +47,13 @@ function encriptar() {  //algoritmo que encripata
       return nuevaPalabra; // aqui debe ya estar encriptado que es lo que retornaremos en caso de que se cumplan las condiciones
       }
       else {
-        alert("no hay frase")
+        alerta.style.display = "";
       }
     }
     
 
     function Desencriptar() { //algorimo que me desencripta
-      
+      alerta.style.display = "none";
         //la frase desencriptada sera igual a mi frase pero le replazaremos a lo que equivale cada letra
         if (frase.value!==''){  let fraseDesencriptada = frase.value.replace(/ai/g, 'a')
         .replace(/enter/g, 'e')
@@ -66,9 +67,10 @@ function encriptar() {  //algoritmo que encripata
 
 
     }else {
-        alert("No hay frase que desencriptar")
+      alerta.style.display = "";
      }
     }
+    
    function addEncr() {
     if(typeof encriptar() === 'undefined'){
         respuesta.innerHTML= '';   
